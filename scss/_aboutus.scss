@@ -1,0 +1,86 @@
+/*EMPIEZA PAGINA ABOUT US*/
+/* modifica mi texto principal*/
+.h1About{
+    font-size: $size2;
+    font-family: $titulos;
+    margin-left: $size5;
+    margin-right: $size5;
+    margin-top: $size10;
+    margin-bottom: $size10;
+    background-color: $bg-lightpink;
+    }            
+
+    /*modifica los titulos del banner*/
+    
+    .subtitle__about{
+      font-size: $size15;
+      font-family: $subtitulos;
+      background-color: $bg-pink;
+      text-align: $txtaligncenter;}
+
+/*modifica los textos del banner*/
+.text__about{
+  font-size:$size08;
+  font-family:  $parrafos;
+  }
+
+  /* modifica body , cuadricula*/              
+.banner__about{
+  display: $d-flex;
+  justify-content: $justify-center;
+  align-items: $alignitemscenter;
+  flex-direction: $flexdirection-column;
+  margin-bottom: $size3;
+  background-color: $bg-pink;
+  margin-bottom: $size2 ;
+}
+.banner__aboutus{
+  margin-bottom: $size5;
+}
+
+/*modifica las imagenes del banner */
+
+.banner__about img {
+  display: $d-block;
+  width: $w-100;
+  height: 300px;
+  margin: $m-auto;
+  object-fit: $bgsizecover;
+}
+
+.banner__about div {
+  padding: $size1;
+}
+
+@media screen and (min-width:768px) {
+  .banner__about{
+      height: 410px;
+      flex-direction: $flexdirection-row;
+      margin: 0;
+      background-color: $bg-reallywhite;
+      font-size: $size2;
+  }
+  .banner__about img {
+      flex: 1 1 $w-50;
+      min-width: $w-50;
+      height: $w-100;
+  }
+  .banner__about div {
+      flex: 1 1 $w-50;
+  }
+  .banner__about:nth-child(odd) img {
+      order: 2;
+  }
+  .subtitle{
+font-size: $size18;
+font-family: $subtitulos;
+background-color: $bg-pink;
+text-align: $txtaligncenter;
+}
+.text__about{
+  font-size:$size1;
+  font-family:$parrafos;
+  }
+}
+
+/*TERMINA PAGINA ABOUT US*/

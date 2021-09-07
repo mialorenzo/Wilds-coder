@@ -1,0 +1,171 @@
+
+
+/*FOOTER*/
+
+
+.bg-footer {
+  background-color: $bg-lightpink;
+  padding: $size05 $size05;
+  
+  
+}
+.footer-heading {
+  letter-spacing: $size05 - 0.2;
+  font-family: $titulos;
+  font-size: $size1 ;
+  margin-top: $size1;
+}
+
+.footer-title{
+  color: $bg-grey;
+  margin-top: $size2;
+}
+
+.img-icon{
+  margin: $m-auto;
+}
+
+.footer-link a {
+  color: $bg-grey;
+  line-height: $size2 + 0.5;
+  font-size: $size1;
+  transition: all 0.1s;
+  text-decoration: $txtdecoration-none;
+  font-family: $subtitulos;
+  font-size: $size08;
+}   
+
+.footer-link a:hover {
+  color: $bg-pinkdior;
+  border-top: 0.3rem dotted $bg-pinkdior;
+}
+
+.contact-info {
+  color: $bg-grey;
+  font-size: $size08;
+  font-family: $subtitulos;
+}
+
+.footer-social-icon {
+  font-size: $size1;
+  height: $size2;
+  width: $size2;
+  line-height: $size2;
+  border-radius: size03;
+  text-align: $txtaligncenter;
+  display: $d-inlineflex;
+}
+
+.facebook {
+  color: $bg-grey;
+}
+
+
+.footer-alt {
+  color: $bg-pinkdior;
+}
+
+.footer-heading {
+  position: $positionrelative;
+  padding-bottom:$size1 - 4;
+}
+
+.footer-heading:after {
+  content: '';
+  width: $size2 - 5 ;
+  border-bottom: 1px solid $bg-grey;
+  position: $positionabsolute;
+  left: 0;
+  bottom: 0;
+  display: $d-block;
+  font-family: $parrafos;
+}
+
+/* este footer esta dado solamente para las paginas index y contact us*/ 
+.bg-footer1 { 
+  background-color: $bg-lightpink;
+  padding: $size05 $size05;
+  width: $w-100;
+  margin-top: $size10 + 8;
+  
+}
+.footer-heading {
+  letter-spacing: $size05 - 0.2;
+  font-family: $titulos;
+  font-size: $size1 ;
+}
+
+.footer-title{
+  color: $bg-grey;
+  margin-top: $size1 ;
+  
+}
+
+.img-icon{
+  margin: $m-auto;
+}
+
+.footer-link a {
+  color: $bg-grey;
+  line-height: $size2 + 0.5;
+  font-size: $size1;
+  transition: all 0.1s;
+  text-decoration: $txtdecoration-none;
+  font-family: $subtitulos;
+  font-size: $size08;
+}   
+
+.footer-link a:hover {
+  color: $bg-pinkdior;
+  border-top: 0.3rem dotted $bg-pinkdior;
+}
+
+.contact-info {
+  color: $bg-grey;
+  font-size: $size08;
+  font-family: $subtitulos;
+}
+
+.footer-social-icon {
+  font-size: $size1;
+  height: $size2;
+  width: $size2;
+  line-height: $size2;
+  border-radius: size03;
+  text-align: $txtaligncenter;
+  display: $d-inlineflex;
+}
+
+.facebook {
+  color: $bg-grey;
+}
+
+
+.footer-alt {
+  color: $bg-pinkdior;
+}
+
+.footer-heading {
+  position: $positionrelative;
+  padding-bottom:$size1 - 4;
+}
+
+.footer-heading:after {
+  content: '';
+  width: $size2 - 5 ;
+  border-bottom: 1px solid $bg-grey;
+  position: $positionabsolute;
+  left: 0;
+  bottom: 0;
+  display: $d-block;
+  font-family: $parrafos;
+}
+
+@media screen and (max-width:768px){
+
+  .bg-footer1 {
+    
+    margin-top: $size10 + 60;
+    
+  }
+}

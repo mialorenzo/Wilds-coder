@@ -1,0 +1,328 @@
+/*EMPIEZA OUR BRAND VALUES*/
+
+.text-muted{
+    font-size: $size1;
+    padding-bottom: $size4;
+    }
+  
+  
+  
+ 
+  @media screen and (min-width:768px) {
+    .text-muted {
+        font-size: $size12;
+    }
+  }
+  
+  /*EMPIEZA BEST PRODUCTS*/
+  
+  .bestproducts{
+    background-color:$bg-pink;
+    padding-bottom: $size6;}
+  
+    .bestproducts__title{
+      padding-top: $size6;
+      padding-bottom: $size3;
+      font-family: $titulos;
+      padding-bottom: $size3;
+      text-align: $txtaligncenter;
+      font-size: $size2;}
+  
+  /*imagenes (tamaño, radio, transicion)*/
+  .gridItem{
+    display: $d-flex;
+    align-items: $alignitemscenter;
+    justify-content: $justify-center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 4px;
+    background-size: $bgsizecover;
+    background-position: $bgpositioncenter;
+    background-repeat: no-repeat;
+    max-width: $w-100; 
+  
+    }
+  
+  .gridItem:hover{
+    filter: opacity(0.9);
+    transform: scale(1.2);
+  }
+  
+  /*modifico el grid y forma */
+  .gridContainer{
+      grid-column-gap: $size1 + 0.25;
+      grid-row-gap: $size1 + 0.8;
+      display: $d-grid;
+      grid-template-columns: repeat(1, 200px);
+      justify-content: $justify-center;
+      grid-template-rows: repeat(1, 200px);
+      
+  }
+  
+  .gridItem img {
+      width: $w-100;
+      height:  $w-100;
+      object-fit: $bgsizecover;
+  }
+  
+  
+  @media screen and (min-width:768px) {
+      .gridContainer {
+      grid-column-gap: $size1 + 0.25;
+      grid-row-gap: $size1 + 0.80;
+      display: $d-grid;
+      grid-template-columns: repeat(3, 200px);
+      justify-content: $justify-center;
+      grid-template-rows: repeat(2, 200px);
+      
+      }
+  }
+  /*TERMINA BEST PRODUCTS*/
+  
+  /*EMPIEZA BLOG*/
+  .blog{
+  margin-bottom: $size2;
+  min-width: $w-100;
+  
+}
+  
+  .blog__title{
+    font-family:$subtitulos;
+    font-size: $size13;
+    text-align:$txtaligncenter;
+    }
+  
+  .blog__p{
+    font-family: $parrafos;
+    font-size: $size1;
+    }
+  
+  .blog__img{
+    padding-bottom: $size2;
+    padding-top: $size1;
+    align-items: $alignitemscenter;
+    width: $w-100;
+    display:$d-block;
+    margin:$m-auto;
+    }
+  
+    .blog-btn{
+    background-color:$bg-pink;
+    text-align: $txtaligncenter;
+    width: $w-50;
+    margin:$m-auto;
+    font-size: $size08 + 0.1;
+    font-family: $subtitulos;
+    border-color: $bg-white;
+    color: $bg-grey;
+    padding: $size05 $size05;
+    border-radius: $size1;
+    display: $d-block;
+    margin: $m-auto;
+    border: none;
+    height: 100;
+    cursor: pointer;
+    color: $bg-grey;
+    text-decoration: $txtdecoration-none;
+    margin-left: $size5 + 3;
+    }
+   
+  
+    .blog-btn:hover{
+    background-color:$bg-white;
+    text-decoration: $txtdecoration-underline;
+    cursor: pointer;
+    color: $bg-pink;
+    }
+
+    /*Boton de los containers y sus resoluciones*/ 
+    .button-container a{
+      position: $positionabsolute;
+      bottom:$size4 ;
+      right:$size5 + 2;
+      background-color:transparent;
+      color:$bg-grey;
+      text-transform:$text-transformupper;
+      padding:1em 1.5em;
+      border: $size05 - 0.4 solid $bg-grey;
+      font-family: $subtitulos;
+      text-decoration: $txtdecoration-none;
+      font-size: $size05;
+      }
+  
+      .button-container2 a{
+        position: $positionabsolute;
+        bottom:$size2;
+        right:$size5 ;
+        background-color:transparent;
+        color:$bg-reallywhite;
+        text-transform:$text-transformupper;
+        padding:1em 1.5em;
+        border: $size05 - 0.4 solid $bg-reallywhite;
+        font-family: $subtitulos;
+        text-decoration: $txtdecoration-none;
+        font-size: $size05;
+        }
+  
+        @media screen and (min-width:320px){
+
+          .button-container a{
+            position: $positionabsolute;
+            bottom:$size05 ;
+            right:$size05;
+            background-color:transparent;
+            color:$bg-grey;
+            text-transform:$text-transformupper;
+            padding:$size05 $size05;
+            border: $size05 - 0.4 solid $bg-grey;
+            font-family: $subtitulos;
+            text-decoration: $txtdecoration-none;
+            font-size: $size05 -0.2;
+            }
+        
+            .button-container2 a{
+              position: $positionabsolute;
+              bottom:$size05;
+              right:$size05 ;
+              background-color:transparent;
+              color:$bg-reallywhite;
+              text-transform:$text-transformupper;
+              padding:1em 1.5em;
+              border: $size05 - 0.4 solid $bg-reallywhite;
+              font-family: $subtitulos;
+              text-decoration: $txtdecoration-none;
+              font-size: $size05 - 0.2;
+              }
+        }
+
+        @media screen and (min-width:433px){
+
+          .button-container a{
+            position: $positionabsolute;
+            bottom:$size2;
+            right:$size08;
+            background-color:transparent;
+            color:$bg-grey;
+            text-transform:$text-transformupper;
+            padding:$size05 $size05;
+            border: $size05 - 0.4 solid $bg-grey;
+            font-family: $subtitulos;
+            text-decoration: $txtdecoration-none;
+            font-size: $size05 -0.2;
+            }
+        
+            .button-container2 a{
+              position: $positionabsolute;
+              bottom:$size2;
+              right:$size08 ;
+              background-color:transparent;
+              color:$bg-reallywhite;
+              text-transform:$text-transformupper;
+              padding:1em 1.5em;
+              border: $size05 - 0.4 solid $bg-reallywhite;
+              font-family: $subtitulos;
+              text-decoration: $txtdecoration-none;
+              font-size: $size05 - 0.2;
+              }
+        }
+  
+        @media screen and (min-width:593px){
+
+          .button-container a{
+            position: $positionabsolute;
+            bottom:$size3;
+            right:$size2;
+            background-color:transparent;
+            color:$bg-grey;
+            text-transform:$text-transformupper;
+            padding:$size05 $size05;
+            border: $size05 - 0.4 solid $bg-grey;
+            font-family: $subtitulos;
+            text-decoration: $txtdecoration-none;
+            font-size: $size05 -0.2;
+            }
+        
+            .button-container2 a{
+              position: $positionabsolute;
+              bottom:$size3;
+              right:$size2 ;
+              background-color:transparent;
+              color:$bg-reallywhite;
+              text-transform:$text-transformupper;
+              padding:1em 1.5em;
+              border: $size05 - 0.4 solid $bg-reallywhite;
+              font-family: $subtitulos;
+              text-decoration: $txtdecoration-none;
+              font-size: $size05 - 0.1;
+              }
+        }
+
+
+        /* termina boton del slider */ 
+
+
+
+  @media screen and (min-width:768px) {
+  .blog__img{
+    display:$d-block;
+    margin:$m-auto;
+    width: $w-33;
+    }
+
+    .blog-btn{
+    background-color:$bg-pink;
+    align-items: $alignitemscenter;
+    width: $w-50 - 25;
+    margin:$m-auto;
+    font-size: $size08 + 0.1;
+    font-family: $subtitulos;
+    border-color: $bg-white;
+    color: $bg-grey;
+    padding: $size05 ;
+    margin-right: $size05;
+    border-radius: $size08;
+    display: $d-block;
+    margin: $m-auto;
+    border: $txtdecoration-none;
+    height: 100;
+    color: $bg-grey;
+    text-decoration: $txtdecoration-none;
+  }
+      
+    
+    .button-container{
+    display:$d-inlineflex;
+    position:$positionrelative;
+    }
+    
+    .button-container a{
+    position: $positionabsolute;
+    bottom:$size3 ;
+    right:$size5 ;
+    background-color:transparent;
+    color:$bg-grey;
+    text-transform:$text-transformupper;
+    padding:1em 1.5em;
+    border: $size05 - 0.4 solid $bg-grey;
+    font-family: $subtitulos;
+    text-decoration: $txtdecoration-none;
+    font-size: $size1;
+    }
+
+    .button-container2 a{
+      position: $positionabsolute;
+      bottom:$size3;
+      right:$size5 ;
+      background-color:transparent;
+      color:$bg-reallywhite;
+      text-transform:$text-transformupper;
+      padding:1em 1.5em;
+      border: $size05 - 0.4 solid $bg-reallywhite;
+      font-family: $subtitulos;
+      text-decoration: $txtdecoration-none;
+      font-size: $size08;
+      }
+  }
+  
+  /* TERMINA BLOG*/
+  
+  

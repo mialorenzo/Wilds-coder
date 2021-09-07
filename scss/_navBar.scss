@@ -1,0 +1,70 @@
+/*nav bar*/
+
+.nav {
+    position: $positionsticky;
+    top: 0;
+    width: $w-100;
+    display: $d-flex;
+    justify-content: space-between;
+    align-items: $alignitemscenter;
+    flex-direction: $flexdirection-column;
+    padding: 0 0em;
+    z-index: 10;
+    background-color:$bg-reallywhite;
+    
+    
+}
+
+.nav .nav__brand a {
+    text-decoration: $txtdecoration-none;
+    font-size: calc(1em + 1vw);
+    font-family: $titulos;
+    
+}
+
+.nav ul {
+    display: $d-flex;
+    justify-content: $justify-center;
+    align-items: $alignitemscenter;
+    list-style: none;
+}
+
+.nav ul li a {
+    display: $d-block;
+    padding: calc(.5em + 1vh) calc(.1em + 1vw);
+    text-transform: uppercase;
+    text-decoration: $txtdecoration-none;
+    font-size: $size1;
+    font-family: $subtitulos;
+    color: $bg-grey;
+    
+}
+
+nav ul li a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: $bg-grey;
+}
+
+@media screen and (min-width:768px) {
+    .nav {
+        flex-direction: $flexdirection-row;
+        background-color: $bg-reallywhite;
+    }
+    .nav ul li a {
+    font-size: $size1 + 0.1;
+    }
+}
+
+
+@media screen and (min-width:1020px) {
+    .nav {
+        flex-direction: $flexdirection-row;
+        background-color:$bg-reallywhite;
+    }
+    .nav ul li a {
+    font-size:$size12;
+    }
+}
+
+/*termina navbar*/

@@ -1,0 +1,43 @@
+/* EMPIEZA CONTACT US*/
+
+.formulario{
+    height:750px; 
+    padding-top: $size1;
+    
+    margin-bottom: $size1;
+    background-position: $bgpositioncenter;
+    background-size:$bgsizecover;
+    
+      .formulario__text{
+        font-size: $size1;
+        padding-bottom: $size2;
+        font-family: $subtitulos;
+      }
+        .formulario__section {
+          margin-top: $size1 -1;
+          margin-left: $size2;
+          margin-right: $size2;
+          padding-bottom: $size2;
+          background-color:$bg-white;
+          margin-bottom: $size10;
+        }
+      }
+  
+  
+  @media screen and (min-width:768px) {
+    .formulario{
+      margin-bottom: $size05;
+
+        .formulario__text{
+          font-size: $size1;
+          padding-bottom: $size1;
+        }
+          .formulario__section {
+            margin-top: $size1 -1;
+            margin-left: $size7;
+            margin-right: $size7;
+            padding-bottom: $size1;
+            background-color: $bg-white;
+          }
+    }
+  }

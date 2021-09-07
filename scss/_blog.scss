@@ -1,0 +1,129 @@
+
+/*BLOG*/
+/* modifica la noticia destacada del mes */
+
+.blog--descatado_imagen{
+  width: $w-50;
+  float: $floatleft;
+  margin-top: $size3;
+  margin-left: $size5;
+  }
+  
+  .blog--descatado_title{
+  font-size: $size4;
+  font-family: $titulos;
+  text-align: $txtaligncenter;
+  margin-top: $size7 ;
+  }
+  .blog--destacado_text{
+    font-size: $size15;
+    font-family: $subtitulos;
+    margin-left: $size2;
+    margin-top:$size4;
+    margin-bottom: $size4;
+  }
+  .blog--heart{
+    font-size: $size3;
+    text-align: $txtaligncenter;
+    margin-top: $size2;
+    color: $bg-pink;
+  }
+  
+    .blog-boton {
+        text-decoration: $txtdecoration-none ;
+        font-size: $size1 ;
+        background-color:$bg-pink;
+        align-items: $alignitemscenter;
+        width: $w-50;
+        margin: $m-auto;
+        font-family: $subtitulos;
+        border-color: $bg-white;
+        color: $bg-grey;
+        border-radius: $size1;
+      
+      }
+
+      .blog-boton a{
+        margin: $size2 $size2;
+        text-decoration:$txtdecoration-none ;
+      }
+
+      .blog-boton:hover{
+        text-decoration: underline;
+        color: $bg-grey;
+      }
+
+  
+  
+      @media screen and (min-width:768px) {
+        .blog--descatado_title{
+          font-size: $size4;
+          font-family: $titulos;
+          text-align: $txtaligncenter;
+          margin-top:$size10 + 10;
+          }
+
+          .blog--descatado_imagen{
+            width: $w-33 ;
+            float: $floatright;
+            margin-top: $size10 + 5;
+            margin-left: 0rem;
+          }
+          
+          .blog--heart{
+            font-size: $size3;
+            text-align: $txtaligncenter;
+            margin-top: $size2;
+            color: $bg-pink;
+          }
+          
+          .blog--destacado_text{
+            font-size: $size15;
+            font-family: $subtitulos;
+            margin-left: $size2;
+            margin-top:$size4;
+            margin-bottom: $size4;
+          }
+        }
+      
+  
+  /* modifican los articulos secundarios, generalmente son 3*/
+  .productos-cards {
+      display:$d-grid;
+      width: $w-70 + 5;
+      margin: $m-auto;
+      grid-template-columns: repeat(auto-fill, 300px);
+      justify-content: $justify-center;
+      grid-gap: $size3;
+      margin-top: $size10 +10;
+  }
+  
+  .blog {
+      width: $w-100;
+      height: 25em;
+      border-radius: $size05;
+      text-align: $txtaligncenter;
+      margin-bottom: $size6;
+  }
+  
+  .blog-title{
+    color: $bg-grey;
+    font-size: $size13;
+    font-family: $titulos;
+  }
+  
+  .blog-text{
+    color: $bg-grey;
+    font-size: $size08 + 0.1;
+    font-family: $parrafos;
+  }
+  
+  .blog img {
+      display: $d-block;
+      border-radius: $size05 $size05 0 0;
+      width: $w-100;
+      height:$w-50;
+      object-fit:contain;
+  }
+  /*final*/
+  

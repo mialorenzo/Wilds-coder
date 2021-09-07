@@ -1,0 +1,161 @@
+/*Modifica la grilla de productos*/
+.card{
+  border-color: $bg-white;
+  height: 25em;
+  border-radius: $size05;
+  text-align: $txtaligncenter;
+  margin-bottom: $size6;
+  .card__img /*modifica imagen de los productos*/ { 
+    transition: transform 0.3s ease-in-out;
+    width: $w-33;
+    margin: $m-auto;
+    margin-top: $size1;
+    }
+    .card__title{
+      font-family: $titulos;
+      font-size: $size15;
+      color: $bg-grey;
+    } 
+
+      .card-text/* modifica el contenido de texto en los productos*/ {
+        font-size: $size08 + 0.1;
+        margin-top: $size1 - 1;
+      }
+  
+        .card__block /*modifica el bloque de producto*/ {
+      background-color: $bg-reallywhite;
+      border-color: $bg-pinkdior;
+      margin-bottom: $size2;
+        }
+  
+        .card__img:hover{
+        filter: opacity(0.95);
+        }
+}
+  .price /*modfica los precios de productos*/ {
+    color:$bg-grey;
+    font-size:$size12;
+    font-family: $titulos;
+  }
+
+  .btn-shop/* boton de BUY - READ MORE en seccion blog*/ {
+    background-color:$bg-pink;
+    align-items: $alignitemscenter;
+    width: $w-50;
+    margin: $m-auto;
+    font-family:$titulos;
+    border-color: $bg-white;
+    color: $bg-grey;
+    padding: $size05 $size05;
+    display: $d-block;
+    margin-top: $size1;
+    margin-bottom: $size2;
+    border: none;
+    height: 100;
+    text-decoration: $txtdecoration-none;
+    text-align: $txtaligncenter;
+    font-size: $size1;
+    }
+
+    .btn-shop:hover{
+      color: $bg-pink;
+      background-color: $bg-grey;
+      border-color: $bg-grey;
+  
+    }
+    .checked /*modifica las estrellitas de las valoraciones*/ {
+      color: $bg-pinkdior;
+    }
+  
+
+    @media screen and (min-width:768px) {
+      
+      
+      .card__img{
+        transition: transform 0.3s ease-in-out;
+        width: $w-50;
+        margin: $m-auto;
+        margin-top: $size1;
+        .card__block{
+          background-color: $bg-reallywhite;
+          border-color: $bg-pinkdior;
+        }
+        .card__img:hover{
+          filter: opacity(0.95);
+        }
+      }
+    }
+
+    /*Empieza the routine*/ 
+
+
+    .row{
+      display: $d-flex;
+      flex-direction: $flexdirection-row;
+      justify-content: $justify-center;
+      align-items: $alignitemstretch;
+      align-content:$aligncontent-center;
+      
+    }
+
+    .column2 /*modifica mis columnas the routine*/ {
+      padding: $size08;
+      display: $d-inlineblock;
+      align-items: $alignitemscenter;
+      justify-content: $justify-center;
+      align-content: $aligncontent-center;
+      flex-wrap: $flexwrap;
+    }    
+    
+    .left, .right, .middle{
+      width: $w-33;
+      background: $bg-reallywhite;
+    }
+    
+    .routine /*modifica contenedor the routine*/ { 
+      padding-top: $size10 - 1;
+      padding-bottom: $size3;
+      font-family: $titulos;
+      padding-bottom: $size3;
+      text-align: $txtaligncenter;
+      font-size: $size2;
+      
+    }
+    
+
+    .routine__subtitle{
+      text-align: $txtalignleft;
+      font-family: $subtitulos;
+      position: $positionflex;
+      font-size: $size15;
+      margin: $size1 $size2;
+    }
+
+
+
+    .img__routine/* modifica mis imagenes de la seccion*/{
+      width: $w-70;
+      border-radius: $w-90;
+    }
+    
+    
+    .p__routine /*modifica texto de la seccion*/{
+      margin: $size1 $size1;
+      font-family: $parrafos;
+    
+      }
+
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: $flexdirection-column;
+        }
+      
+        .p__routine{
+          margin: $size1 - 1 $size1 - 1;
+      }
+    
+      .card__img{
+        width: $w-100;
+      }
+    }
+      

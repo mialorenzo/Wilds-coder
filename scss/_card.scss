@@ -1,0 +1,363 @@
+/*productos */ 
+/* modifica el contenedor producto*/
+.product{
+  background-color: $bg-reallywhite;
+  border-bottom: 1px solid #ddd;
+  clear: both;
+  padding: 0px 10% 70px 10%;
+  padding-top: 5rem;
+
+  .product-image .bg{
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    min-height: 600px;
+  }
+
+  .product-image .dot{
+    background-color: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    width: 5px;
+    height: 5px;
+  
+  }
+  
+  .dot:hover{
+    background-color: #444;
+  }
+  
+    .product-info{
+      padding: 0px 8%;
+    }
+  
+      .product-info h1{
+        margin-bottom: $size1;
+        font-family: $titulos;
+        font-size: $size2;
+      }
+        /*modifica precio del producto*/ 
+        .product-info h2{
+          margin-bottom: 50px;
+          margin-top: 0.8rem;
+          font-size: 1.5rem;
+        }
+
+        .product-info p{
+          margin-bottom: 30px;
+          font-family: $parrafos;
+        }
+        
+        .product-info p a{
+          border-bottom: 1px dotted $bg-grey;
+          color: $bg-grey;
+          font-weight: 700;
+          text-decoration: $txtdecoration-none;
+          transition: all 400ms ease;
+          font-family: $titulos;
+        }
+        
+        .product-info p a:hover{
+          opacity: .7;
+        }
+        
+        .product-info ul{
+          font-size: 12px;
+          padding: 0;
+          margin-top: 0rem;
+          font-family: $parrafos;
+        }
+        
+        .product-info li{
+          list-style-type: none;
+          margin-bottom: 5px;
+        }
+        
+        .product-info li::before{
+          content:"\2022";
+          margin-right: 20px;
+        }
+        
+        
+        .product-info a.share-link{
+          color: #aaa;
+          font-size: $size08;
+          margin-right: $size2;
+          text-decoration: $txtdecoration-none;
+        }
+        
+        .product-info a.share-link:hover{
+          border-bottom: 2px solid $bg-pink;
+        }
+  
+          .product-info .select-dropdown{
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            width: auto;
+            float: left;
+          }
+  
+        .product-info select{
+          cursor: pointer;
+          margin-bottom: 20px;
+          padding: 12px 92px 12px 15px;
+          background-color:#EBEBEB;
+          border: none;
+          border-radius: 2px;
+          color: grey;
+          font-size: 12px;
+          -webkit-appearance: none;
+            -moz-appearance: none;
+                  appearance: none;
+        }
+        
+        select:active, select:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        
+        .select-dropdown:after {
+            content: " ";
+          cursor: pointer;
+            position: absolute;
+            top: 30%;
+          right: 10%;
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 0.5rem solid grey; 
+          }
+  
+    /*modifica boton add to cart */ 
+            .product-info a.add-btn{
+              background-color: floralwhite;
+              border-radius: 2px;
+              color: pink;
+              display: inline-block;
+              font-size: 14px;
+              margin-bottom: 30px;
+              padding: 15px 100px;
+              text-align: center;
+              text-decoration: none;
+              transition: all 400ms ease;
+              font-family: $subtitulos;
+            }
+            
+            a.add-btn:hover{
+              background-color: #555;
+            }
+  
+  
+}
+
+
+
+.subtitle-ingredients{
+    text-align: $txtaligncenter;
+    font-size: $titulos;
+    color: $bg-grey;
+}
+
+.heart-ingredients{
+    color: $bg-pink;
+    font-size: $size2;
+    text-align: $txtaligncenter;
+}
+
+.contact-info{
+  text-decoration: $txtdecoration-none;
+}
+
+@media screen and (min-width:1085px){
+  .product{
+    background-color: $bg-reallywhite;
+    border-bottom: 1px solid #ddd;
+    clear: both;
+    padding: 0px 10% 70px 10%;
+    padding-top: 5rem;
+  }
+  
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .heart-ingredients{
+    color: $bg-pink;
+    font-size: $size2;
+    text-align: $txtaligncenter;
+  }
+  
+  .col-1-2{
+    width: $w-50;
+    height: $w-100;
+    float: $floatleft;
+  }
+  
+  
+  .product-image .bg{
+    background-size: $bgsizecover;
+    background-position: center top;
+    width: $w-100;
+    min-height: 600px;
+  }
+  
+  
+  
+  .product-image .dot{
+    background-color: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    display: $d-inlineflex;
+    margin-right: 5px;
+    width: 5px;
+    height: 5px;
+  
+  }
+  
+  .dot:hover{
+    background-color: #444;
+  }
+  
+  .product-info{
+    padding: 0px 8%;
+  }
+  
+  .product-info h1{
+    margin-bottom: $size1;
+    font-family: $titulos;
+    font-size: $size2;
+  }
+  
+  .product-info h2{
+    margin-bottom: 50px;
+    margin-top: 0.8rem;
+    font-size: $size1 +0.5;
+  }
+  
+  .product-info .select-dropdown{
+    display: $d-inlineflex;
+    margin-right: 10px;
+    position: $positionrelative;
+    width: $m-auto;
+    float:$txtalignleft;
+  }
+  
+  .product-info select{
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 12px 92px 12px 15px;
+    background-color:#EBEBEB;
+    border: none;
+    border-radius: 2px;
+    color: grey;
+    font-size: 12px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  
+  select:active, select:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .select-dropdown:after {
+      content: " ";
+    cursor: pointer;
+      position: $positionabsolute;
+      top: 30%;
+    right: 10%;
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 0.5rem solid grey; 
+    }
+  
+  .product-info a.add-btn{
+    background-color: $bg-white;
+    border-radius: 2px;
+    color: $bg-pink;
+    display: $d-inlineflex;
+    font-size: $size1;
+    margin-bottom:$size2;
+    padding: $size1 $size10 + 90;
+    text-align: $txtaligncenter;
+    text-decoration: $txtdecoration-none;
+    transition: all 400ms ease;
+    font-family: $subtitulos;
+  }
+  
+  a.add-btn:hover{
+    background-color: #555;
+  }
+  
+  .product-info p{
+    margin-bottom: 30px;
+    font-family: $parrafos;
+  }
+  
+  .product-info p a{
+    border-bottom: 1px dotted $bg-grey;
+    color: $bg-grey;
+    font-weight: 700;
+    text-decoration: $txtdecoration-none;
+    transition: all 400ms ease;
+    font-family: $titulos;
+  }
+  
+  .product-info p a:hover{
+    opacity: .7;
+  }
+  
+  .product-info ul{
+    font-size: 12px;
+    padding: 0;
+    margin-top: 0rem;
+    font-family: $parrafos;
+  }
+  
+  .product-info li{
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  
+  .product-info li::before{
+    content:"\2022";
+    margin-right: 20px;
+  }
+  
+  
+  .product-info a.share-link{
+    color: #aaa;
+    font-size: $size08;
+    margin-right: $size2;
+    text-decoration: $txtdecoration-none;
+  }
+  
+  .product-info a.share-link:hover{
+    border-bottom: 2px solid $bg-pink;
+  }
+  
+  .subtitle-ingredients{
+      text-align: $txtaligncenter;
+      font-size: $titulos;
+      color: $bg-grey;
+  }
+  
+  .heart-ingredients{
+      color: $bg-pink;
+      font-size: $size2;
+      text-align: $txtaligncenter;
+  }
+  
+  .contact-info{
+    text-decoration: $txtdecoration-none;
+  }
+  }

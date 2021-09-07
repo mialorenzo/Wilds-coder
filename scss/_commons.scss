@@ -1,0 +1,138 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$bg-white:floralwhite;
+$bg-lightpink:#fcefe7;
+$bg-pink:#f7d1ba;
+$bg-grey:#343434;
+$bg-whitepink:#fff6f6;
+$bg-reallywhite:white;
+$bg-pinkshop:#FFADD5;
+$bg-pinkdior:#f6a7d8;
+
+$w-33:33.3%;
+$w-50:50%;
+$w-70:70%;
+$w-90:90%;
+$w-95:95%;
+$w-100:100%;
+
+
+$h-750:750%;
+
+
+$d-flex:flex;
+$d-block:block;
+$d-grid:grid;
+$d-inlineblock:inline-flex;
+$d-inlineflex:inline block;
+
+$flexdirection-row:row;
+$flexdirection-column:column;
+
+$flexwrap:wrap;
+
+
+
+
+$size05:0.5rem;
+$size08:0.8rem;
+$size1:1rem;
+$size12:1.2rem;
+$size13:1.3rem;
+$size15:1.5rem;
+$size18:1.8rem;
+$size2:2rem;
+$size23:2.3rem;
+$size3:3rem;
+$size4:4rem;
+$size5:5rem;
+$size6:6rem;
+$size7:7rem;
+$size10:10rem;
+
+
+$txtdecoration-none:none;
+$txtdecoration-underline:underline;
+
+$txtaligncenter: center;
+$txtalignleft:left;
+
+$text-transformupper: uppercase;
+
+$positionflex:flex;
+$positionsticky:sticky;
+$positioncenter:center;
+$positionrelative:relative;
+$positionabsolute:absolute;
+
+$justify-center:center;
+$justify-spacebetween:space-between;
+
+
+$floatright:right;
+$floatleft:left;
+
+$bgsizecover:cover;
+$bgpositioncenter:center;
+
+$alignitemscenter:center;
+$alignitemstretch:stretch; 
+
+$aligncontent-center:center;
+
+$m-auto:auto;
+
+$heightmax:100vh;
+
+
+@mixin bg-color($background, $color){
+	background-color: $background;
+	color: $color;
+}
+
+@mixin fontsize-fontfamily($fontsize, $fontfamily){
+	font-size: $fontsize;
+	font-family: $fontfamily;
+}
+
+
+@mixin margintop-marginleft ($margintop, $marginleft){
+	margin-top: $margintop;
+	margin-left: $marginleft;
+}
+
+
+
+
+
+/*todos los h1 de las paginas*/ 
+h1{
+    padding-top: $size6;
+    padding-bottom: $size3;
+    padding-bottom: $size3;
+    text-align: $txtaligncenter;
+    font-size: $size2;
+    font-family: $titulos;
+}
+
+
+
+
+h2{
+    font-size: $size1;
+    margin-top: $size15 ;
+	font-family: $parrafos;
+	margin-left: $size1;
+} 
+
+.h2--routine{
+	@extend h2 ;
+	font-size: $size2;
+	text-align: $txtaligncenter;
+
+} 
