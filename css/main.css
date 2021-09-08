@@ -67,7 +67,7 @@ h2, .h2--routine {
   line-height: 2rem;
   border-radius: size03;
   text-align: center;
-  display: inline block; }
+  display: inline-flex; }
 
 .facebook {
   color: #343434; }
@@ -133,7 +133,7 @@ h2, .h2--routine {
   line-height: 2rem;
   border-radius: size03;
   text-align: center;
-  display: inline block; }
+  display: inline-flex; }
 
 .facebook {
   color: #343434; }
@@ -501,7 +501,7 @@ p.free-shipping__text {
     color: #343434;
     text-decoration: none; }
   .button-container {
-    display: inline block;
+    display: inline-block;
     position: relative; }
   .button-container a {
     position: absolute;
@@ -1020,7 +1020,7 @@ p.free-shipping__text {
 /* modifica el contenedor producto*/
 .product {
   background-color: white;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid white;
   clear: both;
   padding: 0px 10% 70px 10%;
   padding-top: 5rem;
@@ -1032,7 +1032,7 @@ p.free-shipping__text {
     width: 100%;
     min-height: 600px; }
   .product .product-image .dot {
-    background-color: #aaa;
+    background-color: white;
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
@@ -1040,7 +1040,7 @@ p.free-shipping__text {
     width: 5px;
     height: 5px; }
   .product .dot:hover {
-    background-color: #444; }
+    background-color: #343434; }
   .product .product-info {
     padding: 0px 8%; }
   .product .product-info h1 {
@@ -1052,7 +1052,7 @@ p.free-shipping__text {
     margin-top: 0.8rem;
     font-size: 1.5rem; }
   .product .product-info p {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     font-family: "Montserrat", sans-serif; }
   .product .product-info p a {
     border-bottom: 1px dotted #343434;
@@ -1075,7 +1075,7 @@ p.free-shipping__text {
     content: "\2022";
     margin-right: 20px; }
   .product .product-info a.share-link {
-    color: #aaa;
+    color: white;
     font-size: 0.8rem;
     margin-right: 2rem;
     text-decoration: none; }
@@ -1091,10 +1091,10 @@ p.free-shipping__text {
     cursor: pointer;
     margin-bottom: 20px;
     padding: 12px 92px 12px 15px;
-    background-color: #EBEBEB;
+    background-color: white;
     border: none;
     border-radius: 2px;
-    color: grey;
+    color: #343434;
     font-size: 12px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1112,11 +1112,11 @@ p.free-shipping__text {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 0.5rem solid grey; }
+    border-top: 0.5rem solid #343434; }
   .product .product-info a.add-btn {
     background-color: floralwhite;
     border-radius: 2px;
-    color: pink;
+    color: #f7d1ba;
     display: inline-block;
     font-size: 14px;
     margin-bottom: 30px;
@@ -1126,7 +1126,7 @@ p.free-shipping__text {
     transition: all 400ms ease;
     font-family: "Playfair Display SC", serif; }
   .product a.add-btn:hover {
-    background-color: #555; }
+    background-color: #343434; }
 
 .subtitle-ingredients {
   text-align: center;
@@ -1166,15 +1166,15 @@ p.free-shipping__text {
     width: 100%;
     min-height: 600px; }
   .product-image .dot {
-    background-color: #aaa;
+    background-color: white;
     border-radius: 50%;
     cursor: pointer;
-    display: inline block;
+    display: inline-flex;
     margin-right: 5px;
     width: 5px;
     height: 5px; }
   .dot:hover {
-    background-color: #444; }
+    background-color: #343434; }
   .product-info {
     padding: 0px 8%; }
   .product-info h1 {
@@ -1186,7 +1186,7 @@ p.free-shipping__text {
     margin-top: 0.8rem;
     font-size: 1.5rem; }
   .product-info .select-dropdown {
-    display: inline block;
+    display: inline-flex;
     margin-right: 10px;
     position: relative;
     width: auto;
@@ -1195,10 +1195,10 @@ p.free-shipping__text {
     cursor: pointer;
     margin-bottom: 20px;
     padding: 12px 92px 12px 15px;
-    background-color: #EBEBEB;
+    background-color: white;
     border: none;
     border-radius: 2px;
-    color: grey;
+    color: #343434;
     font-size: 12px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1221,7 +1221,7 @@ p.free-shipping__text {
     background-color: floralwhite;
     border-radius: 2px;
     color: #f7d1ba;
-    display: inline block;
+    display: inline-block;
     font-size: 1rem;
     margin-bottom: 2rem;
     padding: 1rem 100rem;

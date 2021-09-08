@@ -5,9 +5,6 @@
     padding-bottom: $size4;
     }
   
-  
-  
- 
   @media screen and (min-width:768px) {
     .text-muted {
         font-size: $size12;
@@ -290,7 +287,7 @@
       
     
     .button-container{
-    display:$d-inlineflex;
+    display:$d-inlineblock;
     position:$positionrelative;
     }
     

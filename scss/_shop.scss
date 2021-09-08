@@ -100,7 +100,7 @@
 
     .column2 /*modifica mis columnas the routine*/ {
       padding: $size08;
-      display: $d-inlineblock;
+      display: $d-inlineflex;
       align-items: $alignitemscenter;
       justify-content: $justify-center;
       align-content: $aligncontent-center;
